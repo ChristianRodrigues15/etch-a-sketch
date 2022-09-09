@@ -13,6 +13,9 @@ function createDivs(rows, cols) {
         const newDiv = document.createElement("div")
         newDiv.id = "canvas"
         mainDiv.appendChild(newDiv)
+        newDiv.addEventListener("mouseover", () => {
+            newDiv.style.backgroundColor = "black"
+        })
     }
 }
 
