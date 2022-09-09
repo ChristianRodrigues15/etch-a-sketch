@@ -1,0 +1,15 @@
+.main {
+    height: 650px;
+    width: 800px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;   
+    margin: auto;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    padding-bottom: 10%;
+}
