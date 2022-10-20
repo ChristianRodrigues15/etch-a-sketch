@@ -31,7 +31,11 @@ function changeColor(choice) {
 };
 
 
+function clearBoard() {
+    let squares = mainDiv.querySelectorAll('div');
+    squares.forEach((div) => div.style.backgroundColor = 'white');
 
+}
 
 
 createDivs(20, 20)

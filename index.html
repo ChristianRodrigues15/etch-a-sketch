@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header class="heading">Etch-a-Sketch</header>
     <div class="main"></div>
     <div class="buttons">
-        <button onclick="changeColor('red')" class="buttonRed">Red</button>
-        <button onclick="changeColor('blue')" class="buttonBlue">Blue</button>
-        <button onclick="changeColor('rainbow')" class="buttonRainbow">Rainbow</button>
-        <button onclick="changeColor('aliceblue')" class="buttonClear">Erase</button>
+        <button onclick="changeColor('red')" class="buttonRed" id="btn">Red</button>
+        <button onclick="changeColor('blue')" class="buttonBlue" id="btn">Blue</button>
+        <button onclick="changeColor('rainbow')" class="buttonRainbow" id="btn">Rainbow</button>
+        <button onclick="changeColor('aliceblue')" class="buttonClear" id="btn">Erase</button>
+        <button onclick="clearBoard()" id="btn">Clear</button>
     </div>
 	<script src="logic.js"></script>
   </body>
