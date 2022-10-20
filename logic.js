@@ -1,9 +1,6 @@
 const mainDiv = document.querySelector(".main")
-const redBtn = document.querySelector(".buttonRed")
-const blueBtn = document.querySelector(".buttonBlue")
-const rainbowBtn = document.querySelector(".buttonRbw")
-const clear = document.querySelector(".buttonClear")
-let color = 'black';
+
+let color = "black";
 
 
 
@@ -14,18 +11,27 @@ function createDivs(rows, cols) {
         const newDiv = document.createElement("div")
         newDiv.id = "canvas"
         mainDiv.appendChild(newDiv)
-        newDiv.addEventListener("mouseover", () => {
-            newDiv.style.backgroundColor = color;
-        })
+        newDiv.addEventListener("mouseover", createColor);
         
     }
-}
+};
+
 function createColor() {
-    this.style.backgroundColor = color;
-}
+    if ((color === "rainbow")) {
+        console.log('hellothere')
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = color;
+    }
+};
 
 function changeColor(choice) {
     color = choice;
-}
+    console.log(color);
+};
+
+
+
+
 
 createDivs(20, 20)
